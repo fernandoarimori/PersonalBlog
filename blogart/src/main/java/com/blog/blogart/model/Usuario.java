@@ -9,6 +9,8 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 
 
 @Entity
@@ -25,6 +27,7 @@ public class Usuario {
 	@Size(max = 5000)
 	private String foto;
 	
+	@Schema
 	@NotNull
 	@Email
 	@Size(min = 5, max = 100)
